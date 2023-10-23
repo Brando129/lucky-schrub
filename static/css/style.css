@@ -1,0 +1,155 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: antiquewhite;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+img {
+    height: 10rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    margin-bottom: 3rem;
+}
+
+nav {
+    margin: 2rem 0;
+    background-image: linear-gradient(to bottom right, mediumspringgreen, seagreen);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 5rem;
+}
+
+a.nav-link{
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+}
+
+a.nav-link:hover {
+    color: white;
+}
+
+a.nav-link:active {
+    color: seagreen;
+}
+
+section {
+    display: flex;
+    margin: 2rem 0;
+}
+
+article#main-article {
+    border: 2px solid black;
+    color: antiquewhite;
+    background-image: url('/static/img/garden.png');
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+/* Text grow and shrink */
+@keyframes flash {
+    0% {
+        color: red;
+    }
+
+    50% {
+        color: purple;
+        /* font-size: 10px; */
+    }
+
+    100% {
+        color: blue;
+    }
+}
+
+span {
+    animation: flash 1s infinite;
+}
+
+p.main-article-text {
+    margin-right: 600px;
+    font-size: 2em;
+}
+
+article h1#main-heading {
+    text-align: start;
+}
+
+/* Cards */
+article#card {
+    padding: 1rem;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/* Card images */
+.card-image {
+    height: 300px;
+}
+
+article h1.sub-heading {
+    text-align: center;
+}
+
+article p.article-text {
+    text-align: center;
+}
+
+article {
+    flex: 1;
+    margin: 0 2rem;
+}
+
+footer {
+    margin: 3rem 0rem 3rem 0rem;
+    display: flex;
+    align-items: center;
+}
+
+footer div {
+    flex: 1;
+    align-items: center;
+}
+
+footer div img {
+    height: 4rem;
+    margin-left: 20rem;
+}
